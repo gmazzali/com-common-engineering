@@ -119,11 +119,15 @@ public class Interval<N extends Number> extends Entity<Long> implements Comparab
 	 */
 	@Override
 	public String toString() {
-		String interval = "";
-		interval += this.minExtreme == null ? "X" : this.minExtreme == Extreme.OPEN ? "(" : "[";
-		interval += this.maxValue + "; " + this.maxValue;
-		interval += this.maxExtreme == null ? "X" : this.maxExtreme == Extreme.OPEN ? ")" : "]";
-		return interval;
+		StringBuffer buffer = new StringBuffer();
+
+		buffer.append(this.minExtreme == null ? "X" : this.minExtreme == Extreme.OPEN ? "(" : "[");
+		buffer.append(this.maxValue);
+		buffer.append("; ");
+		buffer.append(this.maxValue);
+		buffer.append(this.maxExtreme == null ? "X" : this.maxExtreme == Extreme.OPEN ? ")" : "]");
+
+		return buffer.toString();
 	}
 
 	@Override
