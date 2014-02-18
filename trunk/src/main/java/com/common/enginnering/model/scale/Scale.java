@@ -77,6 +77,30 @@ public class Scale<I extends Interval<N>, N extends Number> extends Entity<Long>
 	}
 
 	/**
+	 * Retorna el listado de los intervalos que tenemos dentro de esta escala.
+	 * 
+	 * <pre>
+	 * [intervalo 1], [intervalo 2], ..., [intervalo n]
+	 * </pre>
+	 * 
+	 * @return El listado de los intervalos dentro de esta escala.
+	 */
+	@Override
+	public String toString() {
+		StringBuffer buffer = new StringBuffer();
+
+		for (Interval<N> interval : this.intervals) {
+			buffer.append(interval.toString());
+
+			if (this.intervals.indexOf(interval) != (this.intervals.size() - 1)) {
+				buffer.append(", ");
+			}
+		}
+
+		return buffer.toString();
+	}
+
+	/**
 	 * La función encargada de validar una escala de valores, con sus intervalos.
 	 */
 	public void validateScale() {
