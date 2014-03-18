@@ -1,6 +1,6 @@
 package com.common.enginnering.converter;
 
-import com.common.enginnering.model.TemperatureUnit;
+import com.common.enginnering.util.TemperatureUnit;
 import com.common.util.exception.UncheckedException;
 
 /**

@@ -10,7 +10,7 @@
 		<target.dir>C:/DEV/TARGET/commons-enginnering</target.dir>
 		<jdk.version>1.6</jdk.version>
 	</properties>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -78,7 +78,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.7</version><!--$NO-MVN-MAN-VER$-->
+				<version>2.7</version><!--$NO-MVN-MAN-VER$ -->
 				<executions>
 					<execution>
 						<id>copy-dependencies</id>

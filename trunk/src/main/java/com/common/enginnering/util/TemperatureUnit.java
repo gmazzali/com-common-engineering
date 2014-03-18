@@ -1,4 +1,4 @@
-package com.common.enginnering.model;
+package com.common.enginnering.util;
 
 /**
  * La enumeración que contiene las unidades de temperaturas.
