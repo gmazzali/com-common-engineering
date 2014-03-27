@@ -205,25 +205,25 @@ public class Interval<N extends Number> extends Entity<Long> implements Comparab
 
 		// Validamos el extremos y el valor inferior.
 		if (this.minExtreme == null) {
-			errors.addError("interval.min.extreme.null", new Object[] { this.id });
+			errors.addError("The left extreme cannot be null", "interval.min.extreme.null", this.id);
 		}
 
 		if (this.minValue == null) {
-			errors.addError("interval.min.value.null", new Object[] { this.id });
+			errors.addError("The left value cannot be null", "interval.min.value.null", this.id);
 		}
 
 		// Validamos el valor y el extremo superior.
 		if (this.maxValue == null) {
-			errors.addError("interval.max.value.null", new Object[] { this.id });
+			errors.addError("The right value cannot be null", "interval.max.value.null", this.id);
 		}
 
 		if (this.minExtreme == null) {
-			errors.addError("interval.min.extreme.null", new Object[] { this.id });
+			errors.addError("The right extreme cannot be null", "interval.min.extreme.null", this.id);
 		}
 
 		// Validamos que los extremos no esten invertidos.
 		if (this.minValue != null && this.maxValue != null && this.minValue.doubleValue() > this.maxValue.doubleValue()) {
-			errors.addError("interval.extreme.invert", new Object[] { this.id });
+			errors.addError("The values of the intervals are inverted", "interval.extreme.invert", this.id);
 		}
 
 		if (errors.hasErrorsDetails()) {

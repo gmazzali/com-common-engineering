@@ -108,7 +108,7 @@ public class Scale<I extends Interval<N>, N extends Number> extends Entity<Long>
 
 		// Si no hay un rango dentro de la escala, retornamos false.
 		if (this.intervals.isEmpty()) {
-			throw new UncheckedException("scale.interval.empty");
+			throw new UncheckedException("The intervals cannot be empty", "scale.interval.empty");
 		}
 
 		// Sino, verificamos los rangos.
@@ -121,7 +121,7 @@ public class Scale<I extends Interval<N>, N extends Number> extends Entity<Long>
 			if (i > 0 && i < this.intervals.size() - 1) {
 
 				if (!this.intervals.get(i).getMaxValue().equals(this.intervals.get(i + 1).getMinValue())) {
-					throw new UncheckedException("scale.interval.hole");
+					throw new UncheckedException("The intervals must be continous", "scale.interval.hole");
 				}
 			}
 		}

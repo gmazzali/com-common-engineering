@@ -51,14 +51,16 @@ public class GenericErrorMonitor<V extends Serializable> extends GenericMonitor<
 	/**
 	 * Permite agregar un error al monitor, para luego mandarlo a otra parte del sistema.
 	 * 
-	 * @param message
-	 *            El mensaje del error.
+	 * @param defaultMessage
+	 *            El mensaje por omisión del detalle del error.
+	 * @param keyMessage
+	 *            La clave del mensaje del detalle del error.
 	 * @param parameters
 	 *            El conjunto de parámetros del sistema.
 	 */
-	public void addError(String message, Object... parameters) {
+	public void addError(String defaultMessage, String keyMessage, Object... parameters) {
 		synchronized (this.errorMutex) {
-			this.errors.addError(message, parameters);
+			this.errors.addError(defaultMessage, keyMessage, parameters);
 		}
 	}
 
