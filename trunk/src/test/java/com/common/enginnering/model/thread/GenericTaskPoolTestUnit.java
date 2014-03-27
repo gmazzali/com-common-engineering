@@ -5,6 +5,10 @@ import junit.framework.Assert;
 import org.junit.AfterClass;
 import org.junit.Test;
 
+import com.common.enginnering.domain.model.thread.GenericTask;
+import com.common.enginnering.domain.model.thread.GenericTaskPool;
+import com.common.enginnering.domain.model.thread.TaskStatus;
+
 /**
  * La clase que nos permite probar el elemento del pool de tareas.
  * 

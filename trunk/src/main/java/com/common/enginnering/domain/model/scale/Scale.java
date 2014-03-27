@@ -1,4 +1,4 @@
-package com.common.enginnering.model.scale;
+package com.common.enginnering.domain.model.scale;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.common.util.exception.UncheckedException;
-import com.common.util.model.Entity;
+import com.common.util.domain.exception.UncheckedException;
+import com.common.util.domain.model.Entity;
 
 /**
  * La clase que va a contener un listado de intervalos para mantener una escala numerada para corroborrar donde caen un valor dado. Los intervalos

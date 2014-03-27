@@ -4,7 +4,9 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.common.util.exception.UncheckedException;
+import com.common.enginnering.domain.model.scale.Interval;
+import com.common.enginnering.domain.model.scale.Scale;
+import com.common.util.domain.exception.UncheckedException;
 
 /**
  * Clase que prueba la correcta validación de una eescla de valores dentro del sistema.

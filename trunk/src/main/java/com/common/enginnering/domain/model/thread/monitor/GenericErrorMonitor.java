@@ -1,8 +1,8 @@
-package com.common.enginnering.model.thread.monitor;
+package com.common.enginnering.domain.model.thread.monitor;
 
 import java.io.Serializable;
 
-import com.common.util.exception.error.Errors;
+import com.common.util.domain.exception.error.Errors;
 
 /**
  * Representa el monitor de un proceso para ser escuchado desde otro lado del sistema y asi poder tener una idea del estado de dicho proceso, como

@@ -1,4 +1,4 @@
-package com.common.enginnering.model.thread;
+package com.common.enginnering.domain.model.thread;
 
 
 /**

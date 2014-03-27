@@ -1,12 +1,12 @@
-package com.common.enginnering.model.thread;
+package com.common.enginnering.domain.model.thread;
 
 import java.io.Serializable;
 
 import org.apache.log4j.Logger;
 
-import com.common.enginnering.model.thread.monitor.GenericErrorMonitor;
-import com.common.util.exception.UncheckedException;
-import com.common.util.model.Entity;
+import com.common.enginnering.domain.model.thread.monitor.GenericErrorMonitor;
+import com.common.util.domain.exception.UncheckedException;
+import com.common.util.domain.model.Entity;
 
 /**
  * Nos permite un proceso genérico para poder ejecutar tareas en segundo plano y poder controlar la misma de manera completa.
