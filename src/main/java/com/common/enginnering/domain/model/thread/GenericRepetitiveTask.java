@@ -1,10 +1,10 @@
-package com.common.enginnering.model.thread;
+package com.common.enginnering.domain.model.thread;
 
 import java.io.Serializable;
 
 import org.apache.log4j.Logger;
 
-import com.common.util.exception.UncheckedException;
+import com.common.util.domain.exception.UncheckedException;
 
 /**
  * La clase que nos permite crear una tarea que va a ejecutarse de manera repetitiva para poder controlarla de acuerdo al estado en el que se

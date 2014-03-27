@@ -1,4 +1,4 @@
-package com.common.enginnering.model.thread;
+package com.common.enginnering.domain.model.thread;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.common.enginnering.model.thread.monitor.GenericMonitor;
+import com.common.enginnering.domain.model.thread.monitor.GenericMonitor;
 
 /**
  * La clase que nos permite crear un pool de tareas para poder controlarlos a todos de manera conjunta dentro de un sistema en ejecución y que permite

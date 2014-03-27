@@ -1,4 +1,4 @@
-package com.common.enginnering.model.scale;
+package com.common.enginnering.domain.model.scale;
 
 /**
  * La enumeración que define el estado en el que vamos a tener los extremos de dicho intervalo para ver si estos son abiertos o cerrados.

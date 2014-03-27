@@ -1,10 +1,10 @@
-package com.common.enginnering.model.scale;
+package com.common.enginnering.domain.model.scale;
 
 import org.apache.log4j.Logger;
 
-import com.common.util.exception.UncheckedException;
-import com.common.util.exception.error.Errors;
-import com.common.util.model.Entity;
+import com.common.util.domain.exception.UncheckedException;
+import com.common.util.domain.exception.error.Errors;
+import com.common.util.domain.model.Entity;
 
 /**
  * La clase que define un intervalo de valores entre un valor mínimo y uno máximo. En caso de que los valores que tenemos almacenados sean iguales,

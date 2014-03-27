@@ -5,6 +5,8 @@ import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 
+import com.common.enginnering.domain.model.thread.GenericRepetitiveTask;
+
 /**
  * La clase que nos permite probar la clase {@link GenericRepetitiveTask}.
  * 

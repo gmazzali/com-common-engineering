@@ -1,7 +1,7 @@
-package com.common.enginnering.converter;
+package com.common.enginnering.business.converter;
 
-import com.common.enginnering.util.TemperatureUnit;
-import com.common.util.exception.UncheckedException;
+import com.common.enginnering.domain.util.TemperatureUnit;
+import com.common.util.domain.exception.UncheckedException;
 
 /**
  * La clase que contiene las funciones basicas de conversiones físicas.

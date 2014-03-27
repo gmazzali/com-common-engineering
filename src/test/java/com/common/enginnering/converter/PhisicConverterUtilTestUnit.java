@@ -4,7 +4,8 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.common.enginnering.util.TemperatureUnit;
+import com.common.enginnering.business.converter.PhisicConverterUtil;
+import com.common.enginnering.domain.util.TemperatureUnit;
 
 /**
  * La clase de pruebas de la clase que permite manipular conversiones físicas.

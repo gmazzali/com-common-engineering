@@ -1,4 +1,4 @@
-package com.common.enginnering.model.thread.monitor;
+package com.common.enginnering.domain.model.thread.monitor;
 
 import java.io.Serializable;
 
