@@ -1,6 +1,7 @@
 package com.common.enginnering.business.converter;
 
 import com.common.enginnering.domain.util.TemperatureUnit;
+import com.common.util.business.tool.VerifierUtil;
 import com.common.util.domain.exception.UncheckedException;
 
 /**
@@ -28,15 +29,9 @@ public class PhisicConverterUtil {
 	 */
 	public static Double convertTemperature(Double sourceTemperature, TemperatureUnit sourceUnit, TemperatureUnit targetUnit) {
 		// Si el valor es nulo, lanzamos la excepción.
-		if (sourceTemperature == null) {
-			throw new UncheckedException("The temperature source must don't be null.");
-		}
-		if (sourceUnit == null) {
-			throw new UncheckedException("The temperature unit source must don't be null.");
-		}
-		if (targetUnit == null) {
-			throw new UncheckedException("The temperature unit target must don't be null.");
-		}
+		VerifierUtil.checkNotNull(sourceTemperature, "The temperature source cannot be null", "enginnering.temperature.converter.error.source.null");
+		VerifierUtil.checkNotNull(sourceUnit, "The temperature unit source source cannot be null", "enginnering.temperature.converter.error.source.unit.null");
+		VerifierUtil.checkNotNull(targetUnit, "The temperature unit target source cannot be null", "enginnering.temperature.converter.error.target.unit.null");
 
 		Double targetTemperature = null;
 
