@@ -108,7 +108,7 @@ public class Interval<N extends Number> extends Entity<Long> implements Comparab
 	 * @return El intervalo clonado de este.
 	 */
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
+	protected Object clone() {
 		return new Interval<N>(this);
 	}
 
@@ -120,13 +120,11 @@ public class Interval<N extends Number> extends Entity<Long> implements Comparab
 	@Override
 	public String toString() {
 		StringBuffer buffer = new StringBuffer();
-
 		buffer.append(this.minExtreme == null ? "X" : this.minExtreme == Extreme.OPEN ? "(" : "[");
 		buffer.append(this.maxValue);
 		buffer.append("; ");
 		buffer.append(this.maxValue);
 		buffer.append(this.maxExtreme == null ? "X" : this.maxExtreme == Extreme.OPEN ? ")" : "]");
-
 		return buffer.toString();
 	}
 
@@ -269,6 +267,11 @@ public class Interval<N extends Number> extends Entity<Long> implements Comparab
 		}
 
 		return include;
+	}
+	
+	@Override
+	public Long getId() {
+		return id;
 	}
 
 	/**

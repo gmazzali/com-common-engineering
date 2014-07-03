@@ -235,6 +235,11 @@ public abstract class GenericTask<M extends Serializable> extends Entity<Long> {
 			this.thread.setDaemon(this.daemon);
 		}
 	}
+	
+	@Override
+	public Long getId() {
+		return id;
+	}
 
 	/**
 	 * La función encargada de retornar el nombre de la tarea de este elemento.
