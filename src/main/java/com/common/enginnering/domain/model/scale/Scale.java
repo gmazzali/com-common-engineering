@@ -207,7 +207,7 @@ public class Scale<I extends Interval<N>, N extends Number> extends Entity<Long>
 	 * @return El intervalo donde esta dicho valor, en caso de no encontrarse se retorna un valor NULL.
 	 */
 	public I getIntervalForValue(N value) {
-		Scale.log.trace("get interval");
+		Scale.log.trace("get interval for " + value);
 
 		// Si el valor recibido no es nulo.
 		if (value != null) {
@@ -223,6 +223,11 @@ public class Scale<I extends Interval<N>, N extends Number> extends Entity<Long>
 			}
 		}
 		return null;
+	}
+
+	@Override
+	public Long getId() {
+		return id;
 	}
 
 	/**
